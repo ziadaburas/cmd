@@ -8,8 +8,8 @@ from flask_socketio import SocketIO
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret-terminal'
 # تفعيل الـ WebSockets
-socketio = SocketIO(app, cors_allowed_origins="*", async_mode='eventlet')
-
+#socketio = SocketIO(app, cors_allowed_origins="*", async_mode='eventlet')
+socketio = SocketIO(app, cors_allowed_origins="*")
 # واجهة التيرمنال الاحترافية باستخدام xterm.js
 HTML = """
 <!DOCTYPE html>
