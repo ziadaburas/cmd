@@ -99,5 +99,5 @@ app.post('/run', (req, res) => {
 
 // تشغيل السيرفر
 app.listen(port, () => {
-    console.log(\`Terminal app listening on port \${port}\`);
+    console.log(`Terminal app listening on port ${port}`);
 });
